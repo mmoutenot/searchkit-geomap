@@ -26,7 +26,7 @@ export class GeoAccessor extends Accessor {
       return query.addQuery(new FilteredQuery({
         filter:{
           geo_bounding_box:{
-            location:this.area
+            'pous.location':this.area
           }
         }
       }));
